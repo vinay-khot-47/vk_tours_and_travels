@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+}
+.content{
+    padding: 10px;
+    margin: -80px 170px 10px;
+    overflow: hidden;
+}
+.content h1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(255, 0, 119), 0 0 10px rgb(255, 94, 0), 0 0 20px rgb(255, 128, 0);
+    line-height: 60px;
+    margin: 0px 30px 10px;
+    padding: 10px;
+    font-weight: bold;
+    position: relative;
+    white-space: nowrap; 
+    animation: typing 3s steps(100,end);
+    animation-iteration-count: infinite;
+    transition: 1s ease-in;
+}
+.content span{
+    font-size: 35px;
+    color: chartreuse;
+    text-shadow: none;
+}
+@keyframes typing {
+    0% {
+        width: 0%;
+        font-size: 10px;
+    }
+    25% {   
+        width: 25%;
+    }
+    50% {
+        width: 50%;
+    }
+    70% {   
+        width: 75%;
+    }
+    100% {
+        width: 100%;
+        font-size: 50px;
+        transform: skew(40deg);
+    }
+}
+form{
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    margin: 10px 20px 40px;
+    padding: 20px 60px;
+    background: linear-gradient(rgba(0, 242, 255, 0.687),rgba(247, 81, 109, 0.539),rgba(22, 255, 22, 0.436));
+    border: 1px solid rgb(249, 17, 114);
+}
+legend{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    margin: 10px 40px;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 800;
+    padding: 3px 5px;
+    display: inline-block;
+    letter-spacing: 5px;
+    margin: 10px 20px;
+    position: relative;
+    animation-name: H3;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-play-state: running;
+}
+
+@keyframes H3 {
+    0%{
+        transform: skewX(40deg);
+    }
+    100%{
+        transform: skewX(-10deg);
+    }
+}
+
+.travelers{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.travelers h4{
+    margin: 10px 30px;
+    color: rgb(255, 0, 76);
+    font-size: 25px;
+    font-weight: bolder;
+}
+.travelers label{
+    font-size: larger;
+    margin: 5px 0px 10px 30px;
+    padding: 5px 50px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+.travelers input{
+    padding: 11px 60px;
+    margin: 10px 140px;
+    outline: none;
+    border: none;
+    background-color: beige;
+    width: 200px;
+}
+.travelers input:focus{
+    border: 2px solid greenyellow;
+    background-color: white;
+}
+.travelers textarea{
+    margin: 10px 140px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.travelers textarea:focus{
+    border: 2px solid greenyellow;
+    background-color: white;
+}
+.travel{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.travel label{
+    font-size: larger;
+    margin: 10px 0px 10px 30px;
+    padding: 5px 50px;
+    font-weight: bolder;
+    color: black;
+}
+.travel input{
+    padding: 11px 60px;
+    margin: 10px 140px;
+    outline: none;
+    border: none;
+    width: 200px;
+}
+.travel input:focus{
+    border: 2px solid greenyellow;
+    background-color: white;
+}
+.travel select{
+    padding: 5px 55px;
+    margin: 10px 30px;
+}
+#trip_theme{
+    margin: 10px 140px;
+    padding: 8px 50px;
+}
+.service{
+    margin: 20px;
+}
+.service label{
+    margin: 10px 0px;
+    padding: 5px;
+    font-weight: bolder;
+}
+.service input{
+    margin: 10px 0px 10px 100px;
+    cursor: pointer;
+    width: 200px;
+}
+button{
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.submit{
+    margin: 10px 20px 10px 70px;
+    padding: 8px 20px;
+    color: rgb(18, 1, 251);
+    border: 3px solid rgb(29, 78, 255);
+    font-size: larger;
+}
+.submit:hover{
+    color: white;
+    background-color: rgb(29, 78, 255);
+    font-weight: bolder;
+}
+.reset{
+    margin: 10px;
+    padding: 8px 20px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.662);
+    font-size: large;
+}
+.reset:hover{
+    background-color: rgb(51, 50, 50);
+}

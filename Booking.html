@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vk Tours and Travels</title>
+    <link rel="icon" type="image/x-icon" href="logo_1.png">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="logo/logo.png">
+                <img src="logo/logo_1.png" alt="logo" width="120px" height="120px" style="border-radius: 45px;">
+            </a>  
+        </div>
+    </header>
+    <div class="content">
+        <h1><span><sup>Welcome in</sup></span> Vk Tours and Travels Company</h1>
+    </div>
+    <form onsubmit="booking()">
+        <fieldset>
+            <legend>Trip Booking</legend>
+            <h3>Traveler Details</h3><br><br>
+            <div class="travelers">
+                <h4>Traveler  </h4>
+                <label>Name :</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+                <label>Date of Birth :</label>
+                <input type="date" name="birthdate" id="birthdate" placeholder="Enter Birth Date" required><br>
+                <label>Mobile No. :</label>
+                <input type="tel" name="mobile" id="mobile" placeholder="Enter your mobile no." required><br>
+                <label>Email :</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
+                <label>Address :</label><br>
+                <textarea name="address" id="address" cols="50" rows="2" placeholder="Enter your address...."></textarea><br>
+            </div>
+            <br> 
+            <h3>Travel Details</h3><br><br>
+            <div class="travel">
+                <label>Destinations :</label>
+                <input type="text" name="destination" id="destination" placeholder="Enter destination" required><br>
+                <label>Trip Type :</label>
+                <select name="trip_theme" id="trip_theme">
+                    <option value="select" hidden> Select Your Trip </option>
+                    <option value="Family Trip">Family Trip</option>
+                    <option value="Solo Trip">Solo Trip</option>
+                    <option value="Bachelor Trip">Bachelor Trip</option>
+                    <option value="Couple Trip">Couple Trip</option>
+                    <option value="Business">Business</option>
+                </select><br><br>
+                <label>Other Services :</label>
+                <div class="service">
+                    <input type="checkbox" name="service" id="service" value="Flight">
+                    <label>Flight</label><br>
+                    <input type="checkbox" name="service" id="service" value="Train">
+                    <label>Train</label><br>
+                    <input type="checkbox" name="service" id="service" value="Bus">
+                    <label>Bus</label><br>
+                    <input type="checkbox" name="service" id="service" value="Cruise">
+                    <label>Cruise</label><br>
+                    <input type="checkbox" name="service" id="service" value="Hotel">
+                    <label>Hotel</label><br>
+                </div><br>
+                <label>Departure date :</label>
+                <input type="date" name="departure_date" id="departure_date" required><br>
+                <label>Return date :</label>
+                <input type="date" name="return_date" id="return_date" required><br>
+                <label>Preferred Departure time :</label>
+                <input type="time" name="departure_time" id="departure_time" required><br>
+                <label>Preferred Return time :</label>
+                <input type="time" name="return_time" id="return_time" required><br>
+                <label>Maximum Budget of trip :</label>
+                <input type="tel" name="budget" id="budget" placeholder="Enter your budget" required><br>
+            </div>
+            <br> 
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
