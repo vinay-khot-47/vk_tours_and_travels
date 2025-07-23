@@ -37,6 +37,5 @@ function booking() {
 }
 function message() {
     alert("You are going on booking page.");
-    let booking="Booking.html";
-    window.open(booking,'_blank');
+    window.open("Booking.html",'_blank');
 }
