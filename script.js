@@ -37,6 +37,6 @@ function booking() {
 }
 function message() {
     alert("You are going on booking page.");
-    let booking="https://github.com/vinay-khot-47/vk_tours_and_travels/blob/main/Booking.html";
+    let booking="Booking.html";
     window.open(booking,'_blank');
 }
