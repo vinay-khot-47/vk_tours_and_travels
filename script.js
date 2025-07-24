@@ -2,7 +2,7 @@ function send() {
     let name=document.getElementById("Name").value;
     let city=document.getElementById("City").value;
     let message=document.getElementById("Message").value;
-    let whatsapp="https://wa.me/+919860193979?text="+encodeURIComponent("hi "+name+","+"from "+city+".\n"+message);
+    let whatsapp="https://wa.me/+919860193979?text="+encodeURIComponent("hi i'm "+name+","+"from "+city+".\n"+message);
     window.open(whatsapp,'_blank');
 }
 function booking() {
